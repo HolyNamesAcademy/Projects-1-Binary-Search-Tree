@@ -1,0 +1,15 @@
+/target/
+/bin/
+/out/
+.idea/*
+!.idea/runConfigurations/
+!.idea/runConfigurations/**
+*.iws
+*.iml
+.project
+.classpath
+.settings/
+.DS_Store
+*.class
+*.log
+hs_err_pid*
