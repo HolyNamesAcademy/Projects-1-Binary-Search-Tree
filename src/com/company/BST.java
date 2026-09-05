@@ -27,7 +27,7 @@ public class BST {
      */
 
     public boolean contains(int num){
-        return true;// modify code to behave properly
+        throw new UnsupportedOperationException();
     }
 
     /**
@@ -86,7 +86,7 @@ public class BST {
      */
 
     public boolean add(int n){
-        return true;// modify code to behave properly
+        throw new UnsupportedOperationException();
     }
 
     /**
@@ -106,7 +106,7 @@ public class BST {
      */
 
     public boolean remove(int n){
-        return true;// modify code to behave properly
+        throw new UnsupportedOperationException();
     }
 
     /**
