@@ -53,6 +53,10 @@ Search Trees, and traverse Binary Search Trees.
 In Java, assigning to a method parameter does not change the caller's variable — return the replacement
 subtree from a helper (see the comment on `makeDeletion`) and call `setLeft` / `setRight`.
 
+**Remove checklist:** `remove` returns `true` if the value was present and removed, `false` if it was not in the tree.
+Handle three cases for the node you delete: **0 children** (unlink the leaf), **1 child** (replace with that child),
+**2 children** (copy the inorder successor's value into the node, then remove that successor).
+
 ## The Project
 
 In this project, you will implement functionality to build and work with binary search trees.
