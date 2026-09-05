@@ -21,13 +21,14 @@ public class BSTTest{
         BST tree = new BST(new Node(9));
         tree.add(5); tree.add(2); tree.add(4);
         /**
-         * TO DO: Complete this test
+         * TO DO: Complete this test — assert that a value NOT in the tree returns false from contains
          */
     }
 
     /**
-     * TO DO: Write a test adds a number into the BST that is already in the tree, therefore returns false
+     * TO DO: Write a test that adds a number into the BST that is already in the tree, therefore returns false
      */
+    @Test
     public void addNumberAlreadyInTree(){
 
     }

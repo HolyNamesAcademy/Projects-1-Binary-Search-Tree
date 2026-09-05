@@ -120,27 +120,22 @@ public class BST {
     }
 
     /**
-     * private helper method to delete  the node
-     * @param n the Node to remove
-     * @param item
+     * TO DO: helper that returns the subtree that should replace node n after deleting it.
+     *
+     * Important Java tip: writing {@code n = n.getRight()} only changes the local parameter.
+     * It does NOT update the parent's left/right link. Return the replacement node, and have
+     * the caller use setLeft/setRight (or update head when deleting the root).
+     *
+     * Cases to handle when n is not null:
+     * - no left child → return right child
+     * - no right child → return left child
+     * - two children → copy the inorder successor's value into n, then remove that successor
+     *
+     * @param n the node to remove from the tree structure
+     * @return the node that should take n's place in the tree (may be null)
      */
-
-    private void makeDeletion(Node n, int item){
-       Node curr = null;
-        if (n != null) {
-            if (n.getLeft() == null) {
-                curr = n;
-                n = n.getRight();
-            } else if (n.getRight() == null) {
-                curr = n;
-                n = n.getLeft();
-            } else {
-                curr = n.getRight();
-                while (curr.getLeft() != null)
-                    curr = curr.getLeft();
-                n.setNumber(curr.getNumber());
-                remove(n.getRight(), curr.getNumber());
-            }
-        }
+    private Node makeDeletion(Node n){
+        // Implement the cases above and remove the line below
+        throw new UnsupportedOperationException();
     }
 }

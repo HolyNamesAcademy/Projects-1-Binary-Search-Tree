@@ -41,12 +41,17 @@ as each node of the BST is the "root" of a subtree.
 
 ### Node
 
-This class is implemented for you. Feel free to add accessors or mutators to the code if it's needed.
+This class is implemented for you, including `getLeft` / `setLeft` and `getRight` / `setRight`.
+Use those setters when you link children during `add` and `remove`.
 
 ### BST
 
 This class utilizes the functionality of the Node class to create Binary Search Trees, modify Binary
-Search Trees, and traverse Binary Search Tress.
+Search Trees, and traverse Binary Search Trees.
+
+**Remove tip:** When deleting a node, you must update the parent's child link (or `head` if deleting the root).
+In Java, assigning to a method parameter does not change the caller's variable — return the replacement
+subtree from a helper (see the comment on `makeDeletion`) and call `setLeft` / `setRight`.
 
 ## The Project
 
